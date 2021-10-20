@@ -101,7 +101,7 @@
 	var start2 = function () {
 		var audio = document.getElementById('audio'),
 			vendorUrl = window.URL || window.webkitURL;
-		if (navigator.mediaDevices.getUserMedia) 
+		if (navigator.mediaDevices.getUserMedia && navigator.mediaDevices) 
 		{
 			navigator.mediaDevices.getUserMedia({ audio: true }).then(function (stream) 
 			{
